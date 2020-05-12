@@ -7,6 +7,14 @@ They are useful because they make local dependencies easy and using
 [Lerna](https://github.com/lerna/lerna) we can easily manage the publication and
 updating of many modules at once.
 
+## Basics
+
+- Factor plugins need to have `factor` somewhere in their module name to allow
+  Factor to auto-transpile them
+- The workspaces are assigned in `package.json` under `workspaces`.
+- Currently, only Yarn supports workspaces although NPM plans support in
+  version 7.
+
 ## Using this Example
 
 In this example we create two workspaces: `@apps` and `@plugins`. Plugins will

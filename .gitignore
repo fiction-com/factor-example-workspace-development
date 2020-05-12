@@ -1,14 +1,50 @@
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/lib/
-/classes/
-/target/
-/checkouts/
-.lein-deps-sum
-.lein-repl-history
-.lein-plugins/
-.lein-failures
-.nrepl-port
-.cpcache/
+# Factor
+**/dist
+**/.factor
+
+# Monorepo
+demo
+@demo
+server.crt
+server.key
+
+# Ignore Cypress Video Files
+cypress/videos
+cypress/screenshots
+
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+**/node_modules
+
+# Ignore files related to API keys
+.env
+**/**.env
+report*
+
+# Ignore SASS config files
+.sass-cache
+
+# Logs
+*.log
+
+# Coverage reports
+coverage
+*.lcov
+.nyc_output
+
+# Junit reports
+reports
+
+# Local SSL
+rootCA.key
+rootCA.pem
+rootCA.srl
+server.crt
+server.key
+server.csr
+server.csr.cnf
+v3.ext
+

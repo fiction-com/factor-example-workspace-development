@@ -1,0 +1,31 @@
+{
+  "name": "factor-example-local-dependency",
+  "description": "A Factor project",
+  "author": "Andrew Powers <andrew@fiction.com>",
+  "private": true,
+  "workspaces": [
+    "@apps/*",
+    "@plugins/*"
+  ],
+  "scripts": {
+    "dev": "npx factor dev",
+    "start": "npx factor start",
+    "build": "npx factor build",
+    "lint": "npm run eslint && npm run types",
+    "types": "tsc --skipLibCheck",
+    "eslint": "eslint --ext .ts,.js,.vue,.json ."
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-unicorn": "^17.2.0",
+    "eslint-plugin-vue": "^6.0.0",
+    "lerna": "^3.20.2",
+    "prettier": "^1.17.1",
+    "prettier-eslint": "^9.0.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@factor/core": "^1.0.0",
+    "my-factor-plugin": "^1.0.0"
+  },
+  "factor": {
+    "app": {
+      "name": "Example",
+      "description": "An example app"
+    },
+    "load": [
+      "app",
+      "server"
+    ]
+  }
+}

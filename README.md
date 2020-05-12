@@ -3,15 +3,16 @@
 [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) are currently
 the recommended approach to building and publishing Factor extensions.
 
-They are useful because they make local dependencies easy and using
-[Lerna](https://github.com/lerna/lerna) we can easily manage the publication and
-updating of many modules at once.
+They are useful because they make local dependencies easy. Also with
+[Lerna](https://github.com/lerna/lerna), we can easily manage the publication
+and updating of many modules at once.
 
 ## Basics
 
-- Factor plugins need to have `factor` somewhere in their module name to allow
-  Factor to auto-transpile them
-- The workspaces are assigned in `package.json` under `workspaces`.
+- Factor plugins need to have `factor` somewhere in their module name. This
+  allows Factor to auto-transpile them
+- The workspaces are assigned in `package.json` under `workspaces`. You can
+  customize this.
 - Currently, only Yarn supports workspaces although NPM plans support in
   version 7.
 
@@ -19,8 +20,8 @@ updating of many modules at once.
 
 In this example we create two workspaces: `@apps` and `@plugins`. Plugins will
 typically need an app to interact with so we've created a basic one in `@apps`
-which includes the plugin `my-factor-plugin` (in the `@plugins` folder) as a
-dependency.
+which includes the plugin `my-factor-plugin` (a module in the `@plugins` folder)
+as a dependency.
 
 To run the example:
 
